@@ -78,10 +78,6 @@ body {
     text-align:center;
   
 }
-
-    #logotipo > img {
-    }
-
 #titulo {
 width:75%;
 float:left;
@@ -183,7 +179,7 @@ box-shadow:0px 0px 5px inset;
 }
 .Prensa{
     text-align:center;
-    background-image: url("fondo.jpg");
+    background-image: url("https://i.imgur.com/AUYThLQ.jpg");
 }
 
 #pie {
