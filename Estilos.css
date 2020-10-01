@@ -197,7 +197,7 @@ body::-webkit-scrollbar{
     width: 7px;
 }
 body::-webkit-scrollbar-thumb{
-    background-color: #1b2127;
+    background-color: #c8dfe3;
     border-radius: 5px;
 }
 @media screen and (max-width:767px){
