@@ -200,8 +200,19 @@ body::-webkit-scrollbar-thumb{
     background-color: #c8dfe3;
     border-radius: 5px;
 }
+.Prensa::-webkit-scrollbar{
+    width: 7px;
+}
+.Prensa::-webkit-scrollbar-thumb{
+    background-color: orange;
+    border-radius: 5px;
+}
 @media screen and (max-width:767px){
+    #bajo{
+        width: 100%;
+    }
     #columnacentro{
+        float: none;
         width: 100%;
     }
     #columnaderecha{
@@ -209,4 +220,49 @@ body::-webkit-scrollbar-thumb{
         display: flex;
         float: initial;
     }
+    .Prensa img{
+        width: 100%;
+    }
+    #columnaderecha{
+        min-height: auto;
+    }
+    #edusalta,.redesSociales{
+        display: flex;
+        width: 50%;
+    }
+}
+@media screen and (max-width:766px){
+    #columnaderecha{
+        display: block;
+        padding-top: 10px;
+    }
+    #edusalta,.redesSociales{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .hero{
+        display:block;
+        height: 135px;
+    }
+    #barrahorizontal,.imageContainer{
+        width:100%;
+        height: auto;
+        justify-content: center;
+    }
+    ul{
+        width:100%;
+        justify-content: space-evenly;
+    }
+
+}
+@media screen and (max-width:480px){
+    #cabecera{
+        height: 288px;
+    }
+    #titulo, #logotipo{
+        width:100%;
+        text-align: center;
+    }
+
 }
