@@ -51,32 +51,47 @@ body {
   cursor: pointer;
   background-color: #c8dfe3;
   color: #1b2127;
-  box-shadow: 0px 0px 20px inset;
+  /* box-shadow: 0px 0px 20px inset; */
 }
 
-#barrahorizontal li > a {
+#barrahorizontal li a {
   display: block;
-  color: #1b2127;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   width: 100px;
 }
 
 #logotipo {
-  width: 25%;
+  width: 15%;
   float: left;
   text-align: center;
 }
-#titulo {
-  width: 75%;
-  float: left;
-  text-shadow: 2px 2px 5px #000;
+#inicioLista{
+  color:tomato;
 }
-#titulo > h1 {
+.logoEscolar{
+  margin-left: 0;
+  margin-bottom: 23px;
   margin-top: 20px;
 }
-#titulo > h2 {
+#titulo {
+  font-family: 'Noto Serif', serif;
+  width: 75%;
+  float: left;
+  /* text-shadow: 2px 2px 5px #000; */
+
+}
+#titulo > h1 {
+  margin-top: 45px;
   margin-bottom: 0;
-  color: #f00;
+  color:white;
+  font-weight: 400;
+}
+#titulo i h2 {
+  margin:0;
+  color:rgb(120 183 251);
+  font-weight: 400;
+  font-size: 23px;
 }
 .hero {
   width: 100%;
