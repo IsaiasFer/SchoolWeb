@@ -15,7 +15,13 @@ body {
   margin: auto;
   z-index: 3;
 }
-
+#primeraFila div img, .segundaFila div img{
+  border-radius:20px;
+  border:outset;
+  margin:1px;
+  width:120px;
+  height:65px;
+}
 #contenidocabecera {
   width: 100%;
   margin: auto;
@@ -66,30 +72,29 @@ body {
   float: left;
   text-align: center;
 }
-#inicioLista{
-  color:tomato;
+#inicioLista {
+  color: tomato;
 }
-.logoEscolar{
+.logoEscolar {
   margin-left: 0;
   margin-bottom: 23px;
   margin-top: 20px;
 }
 #titulo {
-  font-family: 'Noto Serif', serif;
+  font-family: "Noto Serif", serif;
   width: 75%;
   float: left;
   /* text-shadow: 2px 2px 5px #000; */
-
 }
 #titulo > h1 {
   margin-top: 45px;
   margin-bottom: 0;
-  color:white;
+  color: white;
   font-weight: 400;
 }
 #titulo i h2 {
-  margin:0;
-  color:rgb(120 183 251);
+  margin: 0;
+  color: rgb(120 183 251);
   font-weight: 400;
   font-size: 23px;
 }
@@ -169,9 +174,14 @@ box-shadow:0px 0px 5px inset;
   box-shadow: 0px 0px 5px #000 inset;
   z-index: 0;
 }
+#columnacentro div img{
+  width:555px;
+  z-index:-2;
+  border-image-outset:2;
+}
 .Prensa {
   text-align: center;
-  background-image: url("https://i.imgur.com/AUYThLQ.jpg");
+  background:white;
 }
 
 #pie {
@@ -200,6 +210,9 @@ body::-webkit-scrollbar-thumb {
   border-radius: 5px;
 }
 @media screen and (max-width: 767px) {
+  #logotipo{
+    width: 22%;
+  }
   #bajo {
     width: 100%;
   }
@@ -218,26 +231,24 @@ body::-webkit-scrollbar-thumb {
   #columnaderecha {
     min-height: auto;
   }
-  #edusalta,
-  .redesSociales {
+  #primeraFila,
+  .segundaFila {
     display: flex;
     width: 50%;
   }
-}
-@media screen and (max-width: 766px) {
   #columnaderecha {
     display: block;
     padding-top: 10px;
   }
-  #edusalta,
-  .redesSociales {
+  #primeraFila,
+  .segundaFila {
     display: flex;
     width: 100%;
     justify-content: space-around;
   }
   .hero {
     display: block;
-    height: 135px;
+    height: 5em;
   }
   #barrahorizontal,
   .imageContainer {
@@ -250,6 +261,15 @@ body::-webkit-scrollbar-thumb {
     justify-content: space-evenly;
   }
 }
+@media screen and (max-width:660px){
+.hero{
+  height:7em;
+}
+}
+@media screen and (max-width:520px){
+  .hero{
+    height:9em;
+  }
 @media screen and (max-width: 480px) {
   #cabecera {
     height: 288px;
@@ -259,4 +279,18 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     text-align: center;
   }
+  .hero{
+    height:7em;
+  }
+}
+@media screen and (max-width:390px){
+  .hero{
+    height:10em;
+  }
+}
+@media screen and (max-width:330px){
+  .hero{
+    height:12em;
+  }
+}
 }
