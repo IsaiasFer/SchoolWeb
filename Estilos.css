@@ -213,18 +213,22 @@ body::-webkit-scrollbar-thumb {
 }
 .Autoridades{
   background: white;
-  padding:20px 350px;
+  padding:20px 50px;
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
 }
 .Autoridades div{
   width:100%;
-  display:flex;
+  text-align: center;
 }
-.descripcion{
-  flex-direction: column;
-  padding-right:1em;
+.Autoridades div figure img{
+  width: 200px;
+  height: 200px;
 }
-.descripcion h1{
+.descripcion h3{
+  font-family: "Roboto Slab";
   margin-bottom: 0;
+  color:#008a83;
 }
 .descripcion h5{
   margin-bottom: 0;
