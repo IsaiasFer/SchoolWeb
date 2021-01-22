@@ -6,7 +6,7 @@ body {
 #cabecera {
   background-color: #1b2127;
   width: 100%;
-  height: 125px;
+  height: 166px;
   /*     background-image:url("http://eet3141.ddns.net/Web3141/Images/960-150.png"); */
   object-fit: cover;
   background-attachment: inherit;
@@ -25,57 +25,50 @@ body {
 #contenidocabecera {
   width: 100%;
   margin: auto;
-  height: 100%px;
+  height: 100%;
 }
 
-#barrahorizontal {
+.barrahorizontal {
   height: 100%;
-  background-color: #1b2127;
   /*     border-radius:0px 0px 10px 10px;
     box-shadow:0px 0px 5px #000 inset; */
-  text-align: center;
   display: flex;
   width: 100%;
 }
 
-#barrahorizontal > ul {
+.barrahorizontal > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  color: white;
   display: flex;
   justify-content: space-evenly;
   height: 100%;
   align-items: center;
   flex-wrap: wrap;
-  width: 100%;
-  font-weight:700;
+  font-weight:400;
 }
 
-#barrahorizontal li {
+.barrahorizontal li {
   border-radius: 5px;
   display: inline-block;
-  padding: 5px;
+ 
   cursor: pointer;
-  background-color: #c8dfe3;
-  color: #1b2127;
   /* box-shadow: 0px 0px 20px inset; */
 }
 
-#barrahorizontal li a {
+.barrahorizontal li a {
   display: block;
-  color: rgb(0, 0, 0);
+  color:#c8dfe3;
   text-decoration: none;
-  width: 100px;
+  padding: 5px 20px;
 }
-
+#inicioLista{
+  padding-left: 0;
+}
 #logotipo {
   width: 15%;
   float: left;
   text-align: center;
-}
-#inicioLista{
-  color: tomato;
 }
 .logoEscolar {
   margin-left: 0;
@@ -101,10 +94,9 @@ body {
   font-size: 23px;
 }
 .hero {
-  width: 100%;
-  height: 50px;
+  width: 85%;
+  height: 45px;
   display: flex;
-  background: #1b2127;
 }
 .imageContainer,
 .imageContainer img {
@@ -220,21 +212,39 @@ body::-webkit-scrollbar-thumb {
 .Autoridades div{
   width:100%;
   text-align: center;
+  margin:25px 0;
 }
 .Autoridades div figure img{
   width: 200px;
   height: 200px;
+  box-shadow: 0px 3px 10px -4px rgba(128,128,128,1);
 }
 .descripcion h3{
   font-family: "Roboto Slab";
-  margin-bottom: 0;
+  margin-bottom: 15px;
   color:#008a83;
 }
 .descripcion h5{
   margin-bottom: 0;
   margin-top: 0;
+  font-size:14px;
+  color:#777777;
+  font-weight: 400;
 }
-
+@media screen and (max-width:880px){
+  #cabecera{
+    height: 222px;
+  }
+  #logotipo{
+    width:20%;
+  }
+  .hero{
+    width: 100%;
+  }
+  .barrahorizontal ul{
+    width: 100%;
+  }
+}
 @media screen and (max-width: 767px) {
   #logotipo{
     width: 22%;
@@ -275,8 +285,12 @@ body::-webkit-scrollbar-thumb {
   .hero {
     display: block;
     height: 5em;
+    width:100%;
   }
-  #barrahorizontal,
+  #inicioLista{
+    padding-left:25px;
+  }
+  .barrahorizontal,
   .imageContainer {
     width: 100%;
     height: auto;
@@ -286,13 +300,29 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     justify-content: space-evenly;
   }
+  #cabecera{
+    height: 200px;
+  }
+}
+@media screen and (max-width:680px){
+  .barrahorizontal li a{
+    padding:5px 15px;
+  }
 }
 @media screen and (max-width:660px){
 .hero{
   height:7em;
 }
 }
+@media screen and (max-width:570px){
+  .barrahorizontal li a{
+    padding:5px 5px;
+  }
+}
 @media screen and (max-width:520px){
+  #cabecera{
+    height:240px;
+  }
   .hero{
     height:9em;
   }
@@ -308,15 +338,40 @@ body::-webkit-scrollbar-thumb {
   .hero{
     height:7em;
   }
+  .barrahorizontal li a{
+    padding:5px 30px;
+  }
+  #cabecera{
+    height: 345px;
+  }
+  #titulo > h1{
+    margin-top:0;
+  }
 }
 @media screen and (max-width:390px){
   .hero{
     height:10em;
   }
+  #cabecera{
+    height:385px
+  }
+  .barrahorizontal li a{
+    padding:5px 10px
+  }
 }
 @media screen and (max-width:330px){
   .hero{
     height:12em;
+  }
+}
+@media screen and (max-width:255px){
+  #cabecera{
+    height:415px;
+  }
+}
+@media screen and (max-width:245px){
+  #cabecera{
+    height:455px;
   }
 }
 }
