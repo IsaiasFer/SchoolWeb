@@ -206,11 +206,14 @@ body::-webkit-scrollbar-thumb {
 .Autoridades{
   background: white;
   padding:20px 50px;
-  display:grid;
-  grid-template-columns: repeat(4,1fr);
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* grid-template-columns: repeat(4,1fr); */
 }
 .Autoridades div{
-  width:100%;
+  height: 314px;
+  width:310px;
   text-align: center;
   margin:25px 0;
 }
@@ -224,12 +227,20 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 15px;
   color:#008a83;
 }
+.Autoridades .descripcion{
+  width: 100%;
+  height:53px;
+}
 .descripcion h5{
   margin-bottom: 0;
   margin-top: 0;
   font-size:14px;
   color:#777777;
   font-weight: 400;
+}
+@media screen and (max-width:1024px){
+  .Autoridades{
+    padding:20px 15px;}
 }
 @media screen and (max-width:880px){
   #cabecera{
@@ -312,6 +323,9 @@ body::-webkit-scrollbar-thumb {
 @media screen and (max-width:660px){
 .hero{
   height:7em;
+}
+.Autoridades div{
+  margin:0;
 }
 }
 @media screen and (max-width:570px){
